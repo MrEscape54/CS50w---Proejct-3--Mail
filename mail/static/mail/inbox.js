@@ -133,6 +133,7 @@ function post() {
     })
     .then(response => response.json())
   }
+  setTimeout(() => {load_mailbox('sent')}, 100);
 }
 
 function read_email(email) {
