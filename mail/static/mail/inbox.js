@@ -120,7 +120,6 @@ function load_mailbox(mailbox) {
     });
   }
 
-
 function post() {
   document.querySelector('form').onsubmit = function() {
     fetch('/emails', {
@@ -132,8 +131,13 @@ function post() {
       })
     })
     .then(response => response.json())
+    .then(result => {
+      // Print result
+      console.log(result);
+      load_mailbox('sent');
+  });
+  return false
   }
-  setTimeout(() => {load_mailbox('sent')}, 100);
 }
 
 function read_email(email) {
