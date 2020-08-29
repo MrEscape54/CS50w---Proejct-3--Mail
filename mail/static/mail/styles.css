@@ -1,0 +1,80 @@
+body{
+    background-color: #f8f8f8;
+}
+
+textarea {
+    min-height: 400px;
+}
+
+h2{
+    font-size: 1.5rem;
+    color: lightslategrey;
+}
+h3{
+    font-size: 1.5rem;
+    color: darkorange;
+}
+
+.mail-container{
+    display: flex;
+    border: 1px solid #cecece;
+    border-bottom: none;
+    padding: 5px;
+    background-color: white;
+    font-size: 0.9em;
+    font-weight: 700;
+}
+
+#emails-view {
+    display: block;
+    padding: 10px 10px 138px;
+    border: 1px solid rgb(196, 196, 196);
+    border-radius: 5px;
+}
+
+#emails-view div:last-of-type { border-bottom: 1px solid #cecece; }
+
+.read{
+    background-color: #e8e8e8;
+    font-weight: 400;
+}
+
+.sender{
+    width: 20%;
+    margin: 0 8px 0 0;
+    overflow: hidden;
+}
+
+.subject{
+    width: 60%;
+    margin: 0px;
+}
+
+.timestamp{
+    width: 20%;
+    margin: 0px;
+    text-align: end;
+}
+
+.email-line{
+    margin-bottom: 0;
+}
+
+.archive{
+    position: absolute;
+    right: 26%;
+    margin-top: 5px;
+    padding: 0px 8px;
+}
+
+.unread{
+    position: absolute;
+    right: 31%;
+    margin-top: 5px;
+    padding: 0px 8px;
+}
+
+.arch{
+    position: relative;
+    left: 19%;
+}
